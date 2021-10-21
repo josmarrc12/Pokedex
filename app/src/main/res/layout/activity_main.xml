@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/pokemon_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/pokemon_imagen"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/pokemon_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_imagen"
+        app:layout_constraintStart_toStartOf="@id/pokemon_imagen"
+        app:layout_constraintEnd_toEndOf="@id/pokemon_imagen"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_20sdp"
+        />
+
+    <Button
+        android:id="@+id/cambiar_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pokemon_tipo"
+        app:layout_constraintStart_toStartOf="@id/pokemon_imagen"
+        app:layout_constraintEnd_toEndOf="@id/pokemon_imagen"
+        android:text="@string/btn_cambiar_pokemon"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textAllCaps="false"
+        android:background="@drawable/bordes"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

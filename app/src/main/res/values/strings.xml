@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="btn_cambiar_pokemon">Change Pokemon</string>
+</resources>
